@@ -10,9 +10,9 @@ ext {
     // by replacing $PREFIX since app code is dependant on the variant used to build the APK.
     // Currently supported values are: [ "apt-android-7" "apt-android-5" ]
     packageVariant = System.getenv("TERMUX_PACKAGE_VARIANT") ?: "apt-android-7" // Default: "apt-android-7"
-    aescBootstrapTag = "AESC_BOOTSTRAP_TAG" // set from the c10vis-poem/termux-packages release
-    aescBootstrapSha256Aarch64 = "AESC_BOOTSTRAP_SHA256_AARCH64"
-    aescBootstrapSha256X8664 = "AESC_BOOTSTRAP_SHA256_X86_64"
+    aescBootstrapTag = "aesc-bootstrap-2026.10.05-r1" // set from the c10vis-poem/termux-packages release
+    aescBootstrapSha256Aarch64 = "1ca6b11e951d3a60e484072577bcfce71173d61ed378a32572afef52e4f1d774"
+    aescBootstrapSha256X8664 = "c7734535c49cd83cb1c52ad08c153bb9576c03ac5aca8b014ca55bb20e50339d"
 }
 
 android {
